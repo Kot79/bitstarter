@@ -3,11 +3,11 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello Worlds 2!');
+  response.sendfile('index.html');
 });
 
 app.get('/name', function(request, response) {
-  response.send('My name is Konstantin!');
+  response.send('My name is Konstantin');
 });
 
 var port = process.env.PORT || 5000;
