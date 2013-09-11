@@ -7,7 +7,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/name', function(request, response) {
-  response.send('My name is Konstantin');
+  response.send('My name is Konstantin !');
 });
 
 var port = process.env.PORT || 5000;
